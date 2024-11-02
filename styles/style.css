@@ -1,29 +1,32 @@
 /* место для вашего кода */
 header {
+    width: 1100px;
     display: grid;
-    grid-template-columns: 3fr 1fr 2fr;
-    justify-content: space-between;
+    grid-template-columns: 1fr min-content 1fr;
     align-content: center;
-    padding: 92px 24px 96px;
+    padding: 92px 50px;
 }
 .header-nav {
     display: grid;
     align-content: center;
 }
 .header-nav-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     justify-items: center;
+    column-gap: 32px;
 }
 .header-nav-list-item {
     font-size: 18px;
     line-height: 117%;
     letter-spacing: 0.01em;
     list-style-type: circle;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 .header-nav-list-item-active {
     text-decoration: none;
     list-style-type: none;
+    margin-left: 27px;
 } 
 .logo-black-link {
     display: grid;
@@ -33,16 +36,269 @@ header {
     width: 148px;
     height: 105px;
 }
-.header-contacts {
+.header-address {
     justify-self: end;
 }
-.header-contacts a {
+.header-address a {
+    font-size: 18px;
+    line-height: 24.3px;
+    letter-spacing: 0.01em;
+    text-underline-offset: 4px;
+}
+.cover {
+    position: relative;
+    width: 100%;
+    background-image: url("../images/cover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 179px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+.cover-title {
+    position: relative;
+    padding: 165px 50px 147px;
+    z-index: 1;
+}
+.aligned-text {
+    display: block;
+    font-family: Raleway;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 115px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #fff;
+}
+.aligned-text_center {
+    text-align: center;
+}
+.aligned-text_right {
+    text-align: right;
+}
+.letter-spacing-extended {
+    font-family: Raleway;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 115px;
+    letter-spacing: 0.6em;
+
+}
+.no-letter-spacing {
+    letter-spacing: 0;
+}
+.cover-description {
+    position: relative;
+    padding: 147px 50px 62px 78px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    z-index: 1;
+}
+.cover-description-text {
+    align-self: center;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    word-spacing: 17px;
+    text-transform: uppercase;
+}
+.bet-button {
+    background-color: transparent;
+    padding: 12px 31px 11px 30px;
+    color: #fff;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25.83px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+.lots {
+    margin-bottom: 148px;
+}
+.lots-heading {
+    padding-left: 40px;
+    padding-bottom: 27px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+
+}
+.lots__card-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    width: 1052px;
+    flex-wrap: wrap;
+    position: relative;
+}
+.lots__card-list-item {
+    background-image: url("../images/card-lot-01.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    list-style-type: none;
+}
+    
+.card-link {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    min-height: 100%;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    width: 334px;
+    padding: 51px 40px 48px;
+    min-height: 100%;
+    flex-grow: 1;
+    z-index: 1;
+}
+
+.card_type_book {
+    background-image: url("../images/card-lot-02.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+.card_type_picture {
+    background-image: url("../images/card-lot-03.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card-title {
+    position: relative;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.4px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.card-text {
+    position: relative;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #fff;
+}
+.lots-link {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.48px;
+    padding-top: 30px;
+    padding-left: 40px;
+    text-transform: lowercase;
+}
+.about {
+    width: 1052px;
+    display: grid;
+    grid-template-columns: 334px 1fr;
+    padding-left: 47px;
+    padding-top: 35px;
+    padding-bottom: 320px;
+    margin-bottom: 180px;
+}
+.about__column {
+    display: grid;
+    row-gap: 24px;
+
+}
+.about__column-first {
+    justify-content: start;
+}
+.about__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 35px;
+}
+.about__logo-image {
+    width: 148px;
+    height: 114px;
+}
+.about__title {
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 136px;
+    padding-bottom: 100px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.96px;
+    text-transform: uppercase;
+}
+.about__text {
+    display: grid;
+    width: 688px;
+    row-gap: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 88px;
+}
+.footer__address a {
     font-size: 18px;
     line-height: 24.3px;
     letter-spacing: 0.01em;
     text-underline-offset: 5px;
 }
-.cover {
-    background-image: url("images\cover.jpg");
-    background-size: cover;
+.footer__menu {
+    justify-self: center;
+}
+.footer__menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+.footer__menu-link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.13px;
+    text-underline-offset: 5px;    
+}
+.footer__menu-link_active {
+    text-decoration: none;
+}
+.footer__social-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.footer__social-list-item {
+    justify-self: end;
+    list-style-type: none;
+}
+.footer__social-icon {
+    width: 48px;
+    height: 48px;
 }
