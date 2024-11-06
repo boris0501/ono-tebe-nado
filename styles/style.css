@@ -39,7 +39,7 @@ header {
 }
 .address {
     justify-self: end;
-    min-width: 215px;
+    width: 215px;
     max-width: 240px;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -73,7 +73,7 @@ header {
 }
 .cover-title {
     position: relative;
-    padding: 165px 50px 147px;
+    padding: 165px 50px 143px;
     z-index: 1;
 }
 .aligned-text {
