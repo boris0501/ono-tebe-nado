@@ -13,8 +13,8 @@
     <header class="header">
       <nav class="header-nav">
         <ul class="header-nav-list">
-          <li class="header-nav-list-item header-nav-list-item-active">
-            <a class="header-nav-list-item-link">главная</a>
+          <li class="header-nav-list-item link-active"> <!--Пробовал ставить допкласс на ссылку - не работает-->
+            <a class="header-nav-list-item-link ">главная</a>
           </li>
           <li class="header-nav-list-item">
             <a class="header-nav-list-item-link">посмотреть лоты</a>
@@ -26,11 +26,12 @@
       </nav>
       <a class="logo-black-link"><img src="images/logo-black.svg" class="logo-black" alt="Черный логотип">
       </a>
-      <div class="header-address">
+      <address class="address">
         <a href="tel:+99995555555">+9 999 555 5555</a><br>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <address class="address">наб. Принсенграхт 263-<br>265, Амстердам</address>
-      </div>
+        <p>наб. Принсенграхт 263-</p>
+        <p>265 Амстердам</p>
+      </address>
     </header>
     <main>
       <section class="cover">
@@ -55,7 +56,7 @@
                 <li class="lots__card-list-item">
                   <a href="#0" class="card-link">
                     <article class="card card_type_film">
-                      <div class="overlay"> </div>
+                      <div class="overlay"></div>
                         <h3 class="card-title">Фильм режиссёра, который бросил киношколу</h3>
                         <p class="card-text">Не просто бросил, а ушёл с первой лекции.
                           Какой была бы ваша ставка, если бы вы не знали, что режиссёр
@@ -121,11 +122,12 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__address">
+      <address class="address">
         <a href="tel:+99995555555">+9 999 555 5555</a><br>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <address>наб. Принсенграхт 263- <br> 265, Амстердам</address>
-      </div>
+        <p>наб. Принсенграхт 263-</p>
+        <p>265, Амстердам</p>
+      </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__menu-list-item"><a href="#0" class="footer__menu-link footer__menu-link_active">главная</a></li>
