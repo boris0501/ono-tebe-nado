@@ -72,7 +72,7 @@ header {
 }
 .cover-title {
     position: relative;
-    padding: 165px 50px 150px;
+    padding: 165px 50px 145px;
     z-index: 1;
 }
 .aligned-text {
@@ -118,7 +118,7 @@ header {
     font-weight: 400;
     line-height: 28px;
     text-align: left;
-    word-spacing: 17px;
+    word-spacing: 18px;
     text-transform: uppercase;
 }
 .bet-button {
@@ -134,11 +134,11 @@ header {
     border: 1px solid #fff;
 }
 .lots {
-    padding-top: 179px;
+    padding-top: 174px;
     margin-bottom: 148px;
 }
 .lots-heading {
-    padding-left: 40px;
+    padding-left: 64px;
     padding-bottom: 27px;
     font-size: 40px;
     font-weight: 700;
@@ -218,8 +218,8 @@ header {
     display: grid;
     grid-template-columns: 334px 1fr;
     padding-left: 47px;
-    padding-top: 35px;
-    padding-bottom: 181px;
+    padding-top: 30px;
+    padding-bottom: 151px;
 }
 .about__column {
     display: grid;
