@@ -40,7 +40,6 @@ header {
 }
 .address {
     justify-self: end;
-    min-width: 215px;
     max-width:240px;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -48,9 +47,7 @@ header {
     font-style: normal;
     line-height: 146%;
     letter-spacing: 0.03em;
-}
-.header .address {
-  padding-right: 25px;
+    padding-right: 25px;
 }
 .address a {
     font-family: 'Raleway', sans-serif;
@@ -283,6 +280,10 @@ header {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 78px;
+}
+footer .address {
+  padding-right: 0;
+  min-width: 220px;
 }
 .footer__menu {
     justify-self: center;
