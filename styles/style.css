@@ -308,8 +308,8 @@
 .footer__social-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 48px;    
-}
+    column-gap: 48px;
+} 
 .footer__social-list-item {
     justify-self: end;
     list-style-type: none;
